@@ -20,6 +20,7 @@
     "run-sequence": "^1.1.5",
     "stream-combiner2": "1.1.1",
     "stream-series": "~0.1.1",
-    "gulp-flatten": "*"
+    "gulp-flatten": "*",
+    "gulp-eslint": "2.0.0"
   }
 }

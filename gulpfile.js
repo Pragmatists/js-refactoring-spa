@@ -14,6 +14,7 @@ var series = require('stream-series');
 var sourcemaps = require('gulp-sourcemaps');
 var flatten = require('gulp-flatten');
 var bower = require('gulp-bower');
+var eslint = require('gulp-eslint');
 
 var fontsSrc = [
     './src/assets/fonts/**/*'
@@ -41,7 +42,7 @@ gulp.task('serve', function (done) {
 });
 
 gulp.task('build', function (done) {
-    runSequence('clean', 'distJS', 'templates', 'sass', 'fonts', 'images', 'index',  done);
+    runSequence('clean', 'lint', 'distJS', 'templates', 'sass', 'fonts', 'images', 'index',  done);
 });
 
 gulp.task('libs', function (done) {
@@ -164,6 +165,21 @@ gulp.task('watch', function () {
 
     gulp.watch('build/**/*.js', _.debounce(browserSync.reload));
     gulp.watch('build/index.html', _.debounce(browserSync.reload));
+});
+
+gulp.task('lint', function() {
+    return gulp.src(jsSources).pipe(eslint({
+            'rules':{
+                'quotes' : [1, 'single'],
+                'semi' : [1, 'always'],
+                'max-statements' : [2, 15],
+                'max-depth' : [1, 3],
+                'complexity' : [2, 5]
+
+            }
+        }))
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError());
 });
 
 
