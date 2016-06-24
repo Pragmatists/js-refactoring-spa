@@ -63,8 +63,4 @@
     }
 
 
-
-    console.log(englishToPigLatin('banana'));
-
-
 })();

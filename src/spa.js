@@ -1,0 +1,3 @@
+var spa = (function () {
+
+}());
