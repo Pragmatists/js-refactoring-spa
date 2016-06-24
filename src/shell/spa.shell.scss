@@ -1,3 +1,7 @@
+#spa {
+  width: 100%;
+  height: 100%;
+}
 .spa-shell-chat {
   bottom        : 0;
   right         : 0;
@@ -7,6 +11,7 @@
   background    : red;
   border-radius : 5px 0 0 0;
   z-index       : 1;
+  position: absolute;
 }
 .spa-shell-chat:hover {
   background : #a00;

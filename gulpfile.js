@@ -25,6 +25,7 @@ var imagesSrc = [
 ];
 
 var jsSources = [
+    './src/spa.js',
     './src/*/*.js'
 ];
 

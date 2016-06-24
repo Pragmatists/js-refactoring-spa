@@ -1,2 +1,9 @@
-@import "chat/spa.chat.scss";
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+@import "shell/spa.shell";
 @import "module-two/module-two";
