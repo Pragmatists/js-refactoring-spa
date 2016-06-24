@@ -25,8 +25,10 @@ var imagesSrc = [
 ];
 
 var jsSources = [
+
     './src/spa.js',
-    './src/*/*.js'
+    './src/shell/spa.shell.js'
+
 ];
 
 var libJS = [
@@ -186,7 +188,6 @@ gulp.task('lint', function() {
 
 function processJS(finalName) {
     return combiner.obj([
-        concat(finalName),
-        uglify()
+        concat(finalName)
     ]);
 }
