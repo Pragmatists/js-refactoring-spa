@@ -1,3 +1,13 @@
+// 'quotes' : [1, 'single'],
+// 'semi' : [1, 'always'],
+// 'max-statements' : [2, 15],
+// 'max-depth' : [1, 3],
+// 'complexity' : [2, 5]
+
+//przykład kodu https://github.com/elijahmanor
+
+
+
 /* const */ var CONSONANTS = 'bcdfghjklmnpqrstvwxyz';
 /* const */ var VOWELS = 'aeiou';
 
