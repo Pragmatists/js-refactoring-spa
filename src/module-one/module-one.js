@@ -1,4 +1,3 @@
 (function(){
-    console.log("module one!")
-    alert( "You are running jQuery version: " + $.fn.jquery );
+    console.log("You are running jQuery version: " + $.fn.jquery);
 })();

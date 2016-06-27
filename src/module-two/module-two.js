@@ -1,3 +1,7 @@
+//jeśli słowo zaczyna się spółgłoskami, to dodajemy je na koniec słowa, a za nimi dodajemy "ay"
+//jeśli słowo zaczyna się od samogłoski dodajemy samo "ay"
+
+
 /* const */ var CONSONANTS = 'bcdfghjklmnpqrstvwxyz';
 /* const */ var VOWELS = 'aeiou';
 
@@ -32,4 +36,10 @@ function englishToPigLatin(english) {
 
 
 
-console.log(englishToPigLatin('package'));
+console.log('pig: ', englishToPigLatin('pig'));
+console.log('banana: ', englishToPigLatin('banana'));
+console.log('trash: ', englishToPigLatin('trash'));
+console.log('glove: ', englishToPigLatin('glove'));
+
+console.log('egg: ', englishToPigLatin('egg'));
+console.log('eight: ', englishToPigLatin('eight'));
